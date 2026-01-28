@@ -14,10 +14,11 @@ await loginpage.validate_login(data.username,data.password);
 
 await expect(page).toHaveTitle("Dashboard - The Man Project");
 
-await page.pause();
+//await page.pause();
 
 
 
 
  });
+
 }
