@@ -1,0 +1,21 @@
+{
+  "name": "theman",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+   "scripts":{
+    "smoke":"npx playwright test loginsampel.spec.js --project=webkit --reporter=line,allure-playwright",
+    "generate-allure-report":"allure generate ./allure-results --clear",
+    "open-allure-report":"allure open ./allure-report"
+  },
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "@playwright/test": "^1.57.0",
+    "@types/node": "^24.10.0",
+    "allure-playwright": "^3.4.5"
+  },
+  "dependencies": {
+    "xlsx": "^0.18.5"
+  }
+}
